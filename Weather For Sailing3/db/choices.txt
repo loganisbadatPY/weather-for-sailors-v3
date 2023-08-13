@@ -1,0 +1,5 @@
+Logan=Windspeed=Tide=Temperature
+Logan=Tide=Current=Weather
+Logan=Windgusts=Current=Weather
+asdfghjk=Windspeed=Tide=Temperature
+asdfghjk=Windspeed=Tide=Temperature
