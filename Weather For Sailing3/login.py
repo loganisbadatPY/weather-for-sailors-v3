@@ -70,11 +70,6 @@ def validate_login(username, password):
         messagebox.showerror("Error", "Username does not exist!")
         return
 
-# Function to handle sign-up button
-def sign_up():
-    tkWindow.destroy()  # Close the current program
-    subprocess.call(["python", "signup.py"])  # Run signup.py
-
 # Create the main tkinter window
 tkWindow = Tk()
 tkWindow.title('Weather For Sailors')
@@ -124,10 +119,6 @@ password_entry.place(relx=0.5, rely=0.61, anchor=CENTER)
 validate_login = partial(validate_login, username, password)
 login_button = Button(tkWindow, text="Log in", command=validate_login)
 login_button.place(relx=0.5, rely=0.65, anchor=CENTER)
-
-# Sign Up Button
-sign_up_button = Button(tkWindow, text="Sign Up", command=sign_up)
-sign_up_button.place(relx=0.5, rely=0.69, anchor=CENTER)
 
 # Start the tkinter event loop
 tkWindow.mainloop()
